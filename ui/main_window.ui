@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Управление паллетами и EO</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1180</width>
+      <height>750</height>
+     </rect>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget.North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget.Rounded</enum>
+    </property>
+    <widget class="QWidget" name="tabEO">
+     <attribute name="title">
+      <string>Список EO</string>
+     </attribute>
+     <widget class="QTreeWidget" name="treeWidgetEO">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>1160</width>
+        <height>680</height>
+       </rect>
+      </property>
+      <property name="headerLabels">
+       <stringlist>
+        <string>EO / Паллет</string>
+        <string>Количество записей</string>
+       </stringlist>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnLoadData">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>150</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Загрузить данные</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabSearch">
+     <attribute name="title">
+      <string>Поиск и фильтрация</string>
+     </attribute>
+     <widget class="QLineEdit" name="lineEditSearch">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1160</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Введите текст для поиска...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSearch">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>150</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Поиск</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidgetSearchResults">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>1160</width>
+        <height>610</height>
+       </rect>
+      </property>
+      <property name="columnCount">
+       <number>0</number>
+      </property>
+      <property name="rowCount">
+       <number>0</number>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabReports">
+     <attribute name="title">
+      <string>Отчёты</string>
+     </attribute>
+     <widget class="QPushButton" name="btnGenerateReport">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>200</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Сгенерировать отчёт</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="textEditReportPreview">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>1160</width>
+        <height>650</height>
+       </rect>
+      </property>
+      <property name="placeholderText">
+       <string>Предпросмотр отчёта...</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
